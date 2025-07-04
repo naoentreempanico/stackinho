@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+ul{
+    list-style: none;
+
+}
+h3{
+    margin: 30px 0;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.manu-superior {
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #fefefe;
+
+}
+
+.manu-superior h2 {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.manu-superior div {
+    display: flex; /* Dividir os filhos do mesmo tamanho*/
+    gap: 10px;
+}
+.busca{
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.busca form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.busca input{
+    flex-grow: 1; /* Pega todo o espaço que está sobrando, mas o pai dele tem que ter o flex*/
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+
+}
+.busca button{
+  padding: 10px 15px;
+  border: none;
+  background-color: #cfcfcf;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.menu-inferior{
+    align-items: center;
+   /* justify-content: center;*/
+    padding: 10px;
+    gap: 60px;
+    background:#e0e0e0;
+}
+.menu-inferior div{
+    display: flex;
+    gap: 10px;
+
+
+}
+.menu-inferior a {
+   
+    background: #ccc;
+    border-radius: 10px;
+    padding: 6px 8px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fefefe;
+    margin-top: 30px;
+}
+.banner{
+    width: 100%;
+    height: 300px;
+    background: #d0d0d0;
+}
+.titulo{
+    text-align: center;
+    margin: 2px;
+    font-size: 24px;
+    color: #333;
+
+}
+/*h3{
+    text-align: center;
+    margin: 2px;
+    font-size: 24px;
+    color: #333;
+}Feito por mim mesma.*/
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.temas{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+.card-tema{
+    background: #e0e0e0; 
+    padding: 20px;
+    transition: transform 0.3s ease;
+
+}
+.card-tema:hover{
+    transform: scale(1.05);
+    background: #d0d0d0;
+}
+.card-tema img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+summary{
+    background: #c1c1c1;
+    padding: 10px;
+    margin-left: -10px;
+    cursor: pointer;
+    list-style-type: ' + ';
+}
+details p{
+    margin: 10px 0;
+
+}
+.menu-hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+.menu{
+    position: absolute;
+    top: 50px;
+    left: -10px;
+    background: #fff;
+    width: 200px;
+    padding: 20px;
+}
+.menu a {
+
+    background: none;
+}
+.menu li{
+    padding: 15px 0;
+
+
+}
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 40px 0;
+}
+.card{
+    position: relative;
+    width: calc(33.33% - 30px);
+    min-width: 250px;
+}
+.card a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 30px 0;
+    transition: transform 0.3s ease;
+
+}
+.card a:hover{
+    transform: scale(1.02);
+}
+.conteudo{
+    background: #636262;
+    padding: 20px 40px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #fff;
+    width: 90%;
+    text-align: center;
+
+}
